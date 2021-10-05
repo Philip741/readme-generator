@@ -9,8 +9,6 @@
 
 [contribution](#contribution)
 
-[testing](#testing)
-
 [username](#username)
 
 [email](#email)
@@ -18,15 +16,24 @@
 [license](#license)
 
    ## Description
-   This application will generate a template for a readme file   
+   This application will generate a template for a readme file.   
+
    ## Instructions
-   install instructions 
+   The install would consist of cloning the repository. 
+   
+   Video link of running the application
+
+   [Running Readme-Generator](https://drive.google.com/file/d/1J0tqsPY8zkLN-Lww98cHjNy-IWxusLDQ/view?usp=sharing)
+
    ## Usage
-   usage 
+   You can run this via nodejs
+   ```
+   nodejs index.js
+   ```
+    
    ## Contribution
-   contribution
-   ## Testing instructions
-   testing instructions
+   You can contribute via pull request and freely fork this repository.
+
    ## Questions
    ### Email:
    philip741@gmail.com
