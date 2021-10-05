@@ -1,12 +1,12 @@
 const licenseBadges = {
   Apache: "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
   MIT: "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
-  BSD: "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)",
+  BSD3: "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)",
 }
 const licenseLinks = {
   Apache: "[License: Apache2](https://opensource.org/licenses/Apache-2.0)",
   MIT: "[License: MIT](https://opensource.org/licenses/MIT)",
-  BSD: "[License: BSD3](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)",
+  BSD3: "[License: BSD3](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)",
 }
 
 function renderLicenseBadge(license) {
@@ -31,7 +31,13 @@ function tableContents (data) {
     let tableVals = []
     sections = Object.keys(data);
     for (let i=0;i < sections.length; i++) {
-        tableVals.push(`[${sections[i]}](#${sections[i]})`);
+        //skip adding title to the table of contents
+        if (sections[i] === "title") { 
+          continue 
+        } 
+        else {
+          tableVals.push(`[${sections[i]}](#${sections[i]})\n`);
+        };
     }
     //return tableVals.forEach((v) => v)
     return tableVals
@@ -57,8 +63,10 @@ function generateMarkdown(data) {
    ## Testing instructions
    ${data.testing}
    ## Questions
-   Email: ${data.email_address}
-   Github Username: ${data.git_username}
+   ### Email:
+   ${data.email}
+   ### Username:
+   ${data.username}
    ## License
    ${renderLicenseLink(data.license)}
   `;

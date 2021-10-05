@@ -20,8 +20,8 @@ const questions = [
    { type: 'input',name: 'usage', message: "Please enter any usage information"},
    { type: 'input',name: 'contribution', message: "Please enter the contribution guidelines"},
    { type: 'input',name: 'testing', message: "Please enter any testing instructions"},
-   { type: 'input',name: 'git_username', message: "Please enter your github username"},
-   { type: 'input',name: 'email_address', message: "Please enter your email address"},
+   { type: 'input',name: 'username', message: "Please enter your github username"},
+   { type: 'input',name: 'email', message: "Please enter your email address"},
    { type: 'list', name: 'license', message: "Choose a license type for the project", choices: licenses}
 ];
 
@@ -37,7 +37,7 @@ function init() {
    prompt(questions)
    .then((answers) => {
        const markdown = generateMarkdown.generateMarkdown(answers);
-       writeToFile('./test.md',markdown);
+       writeToFile('./README.md',markdown);
    })
 }
 
