@@ -31,17 +31,14 @@ function tableContents (data) {
     let tableVals = []
     sections = Object.keys(data);
     for (let i=0;i < sections.length; i++) {
-        tableVals.push(`[${sections[i]}](https://github.com/${data.git_username}/#${sections[i]})`);
+        tableVals.push(`[${sections[i]}](#${sections[i]})`);
     }
     //return tableVals.forEach((v) => v)
     return tableVals
 }
 
-
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   // function to render markdown from object data
-  console.log(data);
   let tableOfContents = tableContents(data);
   contentData = tableOfContents.join('\n');
   data =  
