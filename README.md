@@ -2,13 +2,21 @@
    # Readme-Generator
    ## Table of contents     
    [description](#description)
+
 [instructions](#instructions)
+
 [usage](#usage)
+
 [contribution](#contribution)
+
 [testing](#testing)
+
 [username](#username)
+
 [email](#email)
+
 [license](#license)
+
    ## Description
    This application will generate a template for a readme file   
    ## Instructions
