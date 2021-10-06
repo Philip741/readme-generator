@@ -10,7 +10,7 @@ const licenseChoices = [
     "MIT",
     "BSD",
     "Apache",
-    "GPL"
+    "GPL3"
 ]
 
 const questions = [
