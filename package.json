@@ -1,0 +1,14 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "App that generates a readme.md file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Philip Browning",
+  "license": "ISC",
+  "devDependencies": {
+    "inquirer": "^8.1.5"
+  }
+}
