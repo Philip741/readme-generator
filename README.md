@@ -20,6 +20,14 @@
 
    ## Instructions
    The install would consist of cloning the repository. 
+
+   To install the dependencies 
+   ```
+   npm install
+   ```
+   This should install the inquirer dependency and create the node_modules directory.
+   
+   The modules are not included as this will be generated when install is run.
    
    Video link of running the application
 
@@ -37,7 +45,7 @@
    ## Questions
    ### Email:
    philip741@gmail.com
-   ### Username:
+   ### Github Username:
    philipbrowning
    ## License
    [License: MIT](https://opensource.org/licenses/MIT)
